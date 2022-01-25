@@ -1,0 +1,10 @@
+[user]
+	email = dev@anthonydellavecchia.com
+	name = Anthony_Dellavecchia
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+[init]
+	defaultBranch = main
