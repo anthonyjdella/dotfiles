@@ -1,0 +1,48 @@
+{
+	"analytics-uuid": "1d18dd2b-2995-4f15-af65-10bc73bbdc5e",
+	"motd": {
+		"cloudBuildErrorAfter": 1594252800000,
+		"cloudBuildWarnAfter": 1590019200000,
+		"defaultNode10After": 1594252800000,
+		"minVersion": "3.0.5",
+		"node8DeploysDisabledAfter": 1613390400000,
+		"node8RuntimeDisabledAfter": 1615809600000,
+		"node8WarnAfter": 1600128000000,
+		"fetched": 1638656305550
+	},
+	"usage": true,
+	"user": {
+		"iss": "accounts.google.com",
+		"azp": "563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com",
+		"aud": "563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com",
+		"sub": "107148454604800742054",
+		"email": "leeznon@gmail.com",
+		"email_verified": true,
+		"at_hash": "fkSTUlu_qCMWA19SPfp6Yw",
+		"iat": 1633125645,
+		"exp": 1633129245
+	},
+	"tokens": {
+		"expires_at": 1638659904823,
+		"refresh_token": "1//0f4rs7DxYdpFuCgYIARAAGA8SNwF-L9IrP5eTmJU3dCRC-AEohjPWaTrPaHc9fe6mZhazXDoGP_VZ-ROo8Rda5bGYqUAlJp0cswk",
+		"scopes": [],
+		"access_token": "ya29.a0ARrdaM9Kp0sfKvhQXj8rtN0uWEM0cSFCOd_WPKOxMHk54bzsQhpeK4MGAOdZMhxjfS0eMK0kAUhCHdEVAD71PzRhurJH2d9shC4Mdt5_4CMGexu6ulh_a-4WuMLm2FPNf56XfiJKmT9-LLZwvpckSQ3dJDOwoBAxh1rXUTA",
+		"expires_in": 3599,
+		"scope": "https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/firebase https://www.googleapis.com/auth/cloud-platform openid",
+		"token_type": "Bearer",
+		"id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjkzNDFhYmM0MDkyYjZmYzAzOGU0MDNjOTEwMjJkZDNlNDQ1MzliNTYiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiNTYzNTg0MzM1ODY5LWZncmhnbWQ0N2JxbmVraWo1aThiNXByMDNobzg0OWU2LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiNTYzNTg0MzM1ODY5LWZncmhnbWQ0N2JxbmVraWo1aThiNXByMDNobzg0OWU2LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTA3MTQ4NDU0NjA0ODAwNzQyMDU0IiwiZW1haWwiOiJsZWV6bm9uQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhdF9oYXNoIjoiOV9zazRySHJhN0huVDU3RDI0c254USIsImlhdCI6MTYzODY1NjMwNSwiZXhwIjoxNjM4NjU5OTA1fQ.Ce0LUvHrFW7FhaQN9v4u4lr2bGE0HZy9QxypG2_lJ2JMIGNv7giB5SfEPXnPkSAwEZd3Jln9dlt3YBMgN64E7Nt-yFSRJkROw7hHtO_2fq8Hx_97JVfCnhhE4e097Fxqx9xceFmgvsY6wbL7Cm0VpYbd0s4Lg3cPd-640CbYWaKnx4DYWYgYHB2A8zw-nBsyKODUq-1fT2R6q9lvpWhdMs8kfUP_x3tMbRzcFkC0H2739wMXf_au3Teh1_jBmpf1-to-BIYvxeTkz0rydIHcsswnNhqo75uNCWwfeGIbTljVjgEnyBU0vCM7u0gL9jlqA7ndVO4pxNH4LgVO5DqGqg"
+	},
+	"activeProjects": {
+		"/Users/anthonyjdella/Desktop/Git-Repos/personal-website": "anthonydellavecchia",
+		"/Users/anthonyjdella/Desktop/Git-Repos/anthonyjdella.github.io": "anthonydellavecchia",
+		"/Users/anthonyjdella/Desktop/Git-Repos/personal-website/anthonyjdella": "anthonydellavecchia"
+	},
+	"adminsdkconfig": {
+		"jsonresume-registry-b00b5": {
+			"projectId": "jsonresume-registry-b00b5",
+			"databaseURL": "https://jsonresume-registry-b00b5-default-rtdb.firebaseio.com",
+			"storageBucket": "jsonresume-registry-b00b5.appspot.com",
+			"locationId": "us-central"
+		}
+	}
+}
