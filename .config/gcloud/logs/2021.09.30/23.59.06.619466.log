@@ -1,0 +1,53 @@
+2021-09-30 23:59:06,620 DEBUG    root            Loaded Command Group: ['gcloud', 'alpha', 'resource_manager']
+2021-09-30 23:59:06,621 DEBUG    root            Loaded Command Group: ['gcloud', 'alpha', 'resource-manager', 'liens']
+2021-09-30 23:59:06,623 DEBUG    root            Loaded Command Group: ['gcloud', 'alpha', 'resource-manager', 'liens', 'list']
+2021-09-30 23:59:06,625 DEBUG    root            Running [gcloud.alpha.resource-manager.liens.list] with arguments: []
+2021-09-30 23:59:06,627 INFO     root            Display format: "
+          table(
+            name.segment(),
+            origin,
+            reason
+          )
+        "
+2021-09-30 23:59:06,627 DEBUG    root            (gcloud.alpha.resource-manager.liens.list) The required property [project] is not currently set.
+It can be set on a per-command basis by re-running your command with the [--project] flag.
+
+You may set it for your current workspace by running:
+
+  $ gcloud config set project VALUE
+
+or it can be set temporarily by the environment variable [CLOUDSDK_CORE_PROJECT]
+Traceback (most recent call last):
+  File "/Users/anthonyjdella/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 987, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/Users/anthonyjdella/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 811, in Run
+    display_info=self.ai.display_info).Display()
+  File "/Users/anthonyjdella/google-cloud-sdk/lib/googlecloudsdk/calliope/display.py", line 483, in Display
+    self._printer.Print(self._resources)
+  File "/Users/anthonyjdella/google-cloud-sdk/lib/googlecloudsdk/core/resource/resource_printer_base.py", line 297, in Print
+    for resource in resources:
+  File "/Users/anthonyjdella/google-cloud-sdk/lib/googlecloudsdk/api_lib/resource_manager/error.py", line 45, in Wrapper
+    for i in func(*args, **kwargs):
+  File "/Users/anthonyjdella/google-cloud-sdk/lib/surface/resource_manager/liens/list.py", line 48, in Run
+    parent = 'projects/' + properties.VALUES.core.project.Get(required=True)
+  File "/Users/anthonyjdella/google-cloud-sdk/lib/googlecloudsdk/core/properties.py", line 3064, in Get
+    required)
+  File "/Users/anthonyjdella/google-cloud-sdk/lib/googlecloudsdk/core/properties.py", line 3372, in _GetProperty
+    raise RequiredPropertyError(prop, flag=flag_to_use)
+googlecloudsdk.core.properties.RequiredPropertyError: The required property [project] is not currently set.
+It can be set on a per-command basis by re-running your command with the [--project] flag.
+
+You may set it for your current workspace by running:
+
+  $ gcloud config set project VALUE
+
+or it can be set temporarily by the environment variable [CLOUDSDK_CORE_PROJECT]
+2021-09-30 23:59:06,630 ERROR    root            (gcloud.alpha.resource-manager.liens.list) The required property [project] is not currently set.
+It can be set on a per-command basis by re-running your command with the [--project] flag.
+
+You may set it for your current workspace by running:
+
+  $ gcloud config set project VALUE
+
+or it can be set temporarily by the environment variable [CLOUDSDK_CORE_PROJECT]
+2021-09-30 23:59:06,648 DEBUG    root            Metrics reporting process started...

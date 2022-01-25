@@ -1,0 +1,28 @@
+2021-10-01 00:03:05,211 DEBUG    root            Loaded Command Group: ['gcloud', 'alpha', 'resource_manager']
+2021-10-01 00:03:05,213 DEBUG    root            Loaded Command Group: ['gcloud', 'alpha', 'resource-manager', 'liens']
+2021-10-01 00:03:05,214 DEBUG    root            Loaded Command Group: ['gcloud', 'alpha', 'resource-manager', 'liens', 'list']
+2021-10-01 00:03:05,217 DEBUG    root            Running [gcloud.alpha.resource-manager.liens.list] with arguments: [--project: "agent-name-cb698"]
+2021-10-01 00:03:05,218 INFO     root            Display format: "
+          table(
+            name.segment(),
+            origin,
+            reason
+          )
+        "
+2021-10-01 00:03:05,278 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2021-10-01 00:03:05,507 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/liens?alt=json&parent=projects%2Fagent-name-cb698 HTTP/1.1" 200 None
+2021-10-01 00:03:05,510 INFO     ___FILE_ONLY___ NAME
+2021-10-01 00:03:05,510 INFO     ___FILE_ONLY___                                                  
+2021-10-01 00:03:05,510 INFO     ___FILE_ONLY___ ORIGIN
+2021-10-01 00:03:05,511 INFO     ___FILE_ONLY___                                                                                                                                                                                                                            
+2021-10-01 00:03:05,511 INFO     ___FILE_ONLY___ REASON
+2021-10-01 00:03:05,511 INFO     ___FILE_ONLY___ 
+
+2021-10-01 00:03:05,511 INFO     ___FILE_ONLY___ p219903456354-l0237f27f-e8ed-4cb9-bf88-9dfa6bea7f86
+2021-10-01 00:03:05,511 INFO     ___FILE_ONLY___   
+2021-10-01 00:03:05,511 INFO     ___FILE_ONLY___ You cannot delete this project because it is linked with a Dialogflow agent. Please follow the link to Dialogflow and delete the agent: https://console.dialogflow.com/api-client/#/agent/e51201b4-9e60-46d7-bfa7-c7e7dfa809d1/
+2021-10-01 00:03:05,511 INFO     ___FILE_ONLY___   
+2021-10-01 00:03:05,511 INFO     ___FILE_ONLY___ Deletion blocked by Dialogflow.
+2021-10-01 00:03:05,511 INFO     ___FILE_ONLY___ 
+
+2021-10-01 00:03:05,521 DEBUG    root            Metrics reporting process started...

@@ -1,0 +1,75 @@
+2021-09-30 23:56:06,406 DEBUG    root            Loaded Command Group: ['gcloud', 'init']
+2021-09-30 23:56:06,408 DEBUG    root            Running [gcloud.init] with arguments: []
+2021-09-30 23:56:06,408 INFO     ___FILE_ONLY___ Welcome! This command will take you through the configuration of gcloud.
+
+
+2021-09-30 23:56:06,410 INFO     ___FILE_ONLY___ Your current configuration has been set to: [default]
+
+
+2021-09-30 23:56:06,410 INFO     ___FILE_ONLY___ You can skip diagnostics next time by using the following flag:
+
+2021-09-30 23:56:06,410 INFO     ___FILE_ONLY___   gcloud init --skip-diagnostics
+
+
+2021-09-30 23:56:06,410 INFO     ___FILE_ONLY___ Network diagnostic detects and fixes local network connection issues.
+
+2021-09-30 23:56:06,411 INFO     ___FILE_ONLY___ Checking network connection...
+2021-09-30 23:56:08,248 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): accounts.google.com:443
+2021-09-30 23:56:08,362 DEBUG    urllib3.connectionpool https://accounts.google.com:443 "GET / HTTP/1.1" 302 338
+2021-09-30 23:56:08,459 DEBUG    urllib3.connectionpool https://accounts.google.com:443 "GET /ServiceLogin?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F HTTP/1.1" 200 None
+2021-09-30 23:56:08,526 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2021-09-30 23:56:08,673 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1beta1/projects HTTP/1.1" 401 None
+2021-09-30 23:56:08,676 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): www.googleapis.com:443
+2021-09-30 23:56:08,791 DEBUG    urllib3.connectionpool https://www.googleapis.com:443 "GET /auth/cloud-platform HTTP/1.1" 200 14
+2021-09-30 23:56:08,795 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2021-09-30 23:56:08,925 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components-2.json HTTP/1.1" 200 167885
+2021-09-30 23:56:09,036 INFO     ___FILE_ONLY___ Reachability Check passed.
+
+2021-09-30 23:56:09,036 INFO     ___FILE_ONLY___ Network diagnostic passed (1/1 checks passed).
+
+
+2021-09-30 23:56:14,813 DEBUG    root            Loaded Command Group: ['gcloud', 'auth']
+2021-09-30 23:56:14,959 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'login']
+2021-09-30 23:56:14,960 INFO     root            Executing: [gcloud auth login --force --brief]
+2021-09-30 23:56:14,961 DEBUG    root            Running [gcloud.auth.login] with arguments: [--brief: "True", --force: "True"]
+2021-09-30 23:56:14,964 DEBUG    requests_oauthlib.oauth2_session Generated new state PZ4TGJAcuwUONmckHxPCFrDDe8odCM.
+2021-09-30 23:56:15,192 INFO     ___FILE_ONLY___ Your browser has been opened to visit:
+
+    https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=32555940559.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A8085%2F&scope=openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fappengine.admin+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcompute+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Faccounts.reauth&state=PZ4TGJAcuwUONmckHxPCFrDDe8odCM&access_type=offline&code_challenge=nyKzWZt6aW-c3yBlBTwVJPBk7fEccwUTMpp2fFJvDKk&code_challenge_method=S256
+
+
+2021-09-30 23:56:22,272 INFO     google_auth_oauthlib.flow "GET /?state=PZ4TGJAcuwUONmckHxPCFrDDe8odCM&code=4/0AX4XfWjW7xMbk9jgDH-_E3rfDu9CQUINPLYYTKHakwyTusidPPUd1Ao1-02lqBE9Q-2Rug&scope=email%20openid%20https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/cloud-platform%20https://www.googleapis.com/auth/appengine.admin%20https://www.googleapis.com/auth/compute%20https://www.googleapis.com/auth/accounts.reauth&authuser=0&prompt=consent HTTP/1.1" 200 959
+2021-09-30 23:56:22,273 DEBUG    requests_oauthlib.oauth2_session Requesting url https://oauth2.googleapis.com/token using method POST.
+2021-09-30 23:56:22,273 DEBUG    requests_oauthlib.oauth2_session Supplying headers {b'Accept': b'application/json', b'Content-Type': b'application/x-www-form-urlencoded;charset=UTF-8', b'user-agent': b'google-cloud-sdk gcloud/359.0.0 command/gcloud.auth.login invocation-id/1831452f83fd4c51985439063cb99590 environment/None environment-version/None interactive/True from-script/False python/3.7.3 term/xterm-256color (Macintosh; Intel Mac OS X 20.6.0)'} and data {'grant_type': 'authorization_code', 'client_id': '32555940559.apps.googleusercontent.com', 'client_secret': 'ZmssLNjJy2998hD4CTg2ejr2', 'code': '4/0AX4XfWjW7xMbk9jgDH-_E3rfDu9CQUINPLYYTKHakwyTusidPPUd1Ao1-02lqBE9Q-2Rug', 'redirect_uri': 'http://localhost:8085/', 'code_verifier': 'I6aGtCgZSC1PejX01ZzJKTaz5-BiiTTil_5G8jTw6Dj-CMLbdR.w0mWAHC3In_ooNPqFKGnVL-1cu0.Fn00Y7Ly9Qr-n~yZ2YwC_krETjCI7VlbpGiBu1IfBhKn8gnqg'}
+2021-09-30 23:56:22,274 DEBUG    requests_oauthlib.oauth2_session Passing through key word arguments {'json': None, 'timeout': None, 'auth': None, 'verify': True, 'proxies': None}.
+2021-09-30 23:56:22,299 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2021-09-30 23:56:22,481 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2021-09-30 23:56:22,483 DEBUG    requests_oauthlib.oauth2_session Prepared fetch token request body grant_type=authorization_code&client_id=32555940559.apps.googleusercontent.com&client_secret=ZmssLNjJy2998hD4CTg2ejr2&code=4%2F0AX4XfWjW7xMbk9jgDH-_E3rfDu9CQUINPLYYTKHakwyTusidPPUd1Ao1-02lqBE9Q-2Rug&redirect_uri=http%3A%2F%2Flocalhost%3A8085%2F&code_verifier=I6aGtCgZSC1PejX01ZzJKTaz5-BiiTTil_5G8jTw6Dj-CMLbdR.w0mWAHC3In_ooNPqFKGnVL-1cu0.Fn00Y7Ly9Qr-n~yZ2YwC_krETjCI7VlbpGiBu1IfBhKn8gnqg
+2021-09-30 23:56:22,483 DEBUG    requests_oauthlib.oauth2_session Request to fetch token completed with status 200.
+2021-09-30 23:56:22,483 DEBUG    requests_oauthlib.oauth2_session Request headers were {'user-agent': b'google-cloud-sdk gcloud/359.0.0 command/gcloud.auth.login invocation-id/1831452f83fd4c51985439063cb99590 environment/None environment-version/None interactive/True from-script/False python/3.7.3 term/xterm-256color (Macintosh; Intel Mac OS X 20.6.0)', 'Accept-Encoding': 'gzip, deflate', 'Accept': b'application/json', 'Connection': 'keep-alive', 'Content-Type': b'application/x-www-form-urlencoded;charset=UTF-8', 'Content-Length': '387'}
+2021-09-30 23:56:22,483 DEBUG    requests_oauthlib.oauth2_session Request body was grant_type=authorization_code&client_id=32555940559.apps.googleusercontent.com&client_secret=ZmssLNjJy2998hD4CTg2ejr2&code=4%2F0AX4XfWjW7xMbk9jgDH-_E3rfDu9CQUINPLYYTKHakwyTusidPPUd1Ao1-02lqBE9Q-2Rug&redirect_uri=http%3A%2F%2Flocalhost%3A8085%2F&code_verifier=I6aGtCgZSC1PejX01ZzJKTaz5-BiiTTil_5G8jTw6Dj-CMLbdR.w0mWAHC3In_ooNPqFKGnVL-1cu0.Fn00Y7Ly9Qr-n~yZ2YwC_krETjCI7VlbpGiBu1IfBhKn8gnqg
+2021-09-30 23:56:22,484 DEBUG    requests_oauthlib.oauth2_session Response headers were {'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'Pragma': 'no-cache', 'Expires': 'Mon, 01 Jan 1990 00:00:00 GMT', 'Date': 'Fri, 01 Oct 2021 04:56:22 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Vary': 'Origin, X-Origin, Referer', 'Content-Encoding': 'gzip', 'Server': 'scaffolding on HTTPServer2', 'X-XSS-Protection': '0', 'X-Frame-Options': 'SAMEORIGIN', 'X-Content-Type-Options': 'nosniff', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"', 'Transfer-Encoding': 'chunked'} and content {
+  "access_token": "ya29.a0ARrdaM-YWvZquNcNhlZma1NAVpN8TrU6eA0XMQZIwrScP8PFEXFET8n3t79QlhP7-fUacIqayr8pFrvX9dGX0dL8Xzichh6EEBEyxP5T596yCeitq1Ju_i2kYsmMhxuDU20SfftA9cUHp-9gGBQdcZZ-xEMiy2gDzsLz",
+  "expires_in": 3599,
+  "refresh_token": "1//0f9chtE7398dcCgYIARAAGA8SNwF-L9IruRmG4j46MJDc6qF8I-MlPfMbAtBHn-A8IiOipgVG7aVv4W0BleajhXst1LHd6z-dU0U",
+  "scope": "https://www.googleapis.com/auth/compute https://www.googleapis.com/auth/accounts.reauth openid https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/appengine.admin",
+  "token_type": "Bearer",
+  "id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjhkOTI5YzYzZmYxMDgyYmJiOGM5OWY5OTRmYTNmZjRhZGFkYTJkMTEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzMjU1NTk0MDU1OS5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImF1ZCI6IjMyNTU1OTQwNTU5LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTA3MTQ4NDU0NjA0ODAwNzQyMDU0IiwiZW1haWwiOiJsZWV6bm9uQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhdF9oYXNoIjoiU3M4R2RkRGpSVnhHbmptWEtIZlFnZyIsImlhdCI6MTYzMzA2NDE4MiwiZXhwIjoxNjMzMDY3NzgyfQ.JyEjCBeKszbtSeMm0micmHiN5UYGmi0EmZuwrGZDE4Ht147pprVR-PxuuHfNhqyvGfdyXdgdAulkg7HHxhaTDeFtoJ8Ym8LG06wBYvEjP8-L2KgCPXKEC-qbkIdMc2JvkcVMC-uV2y-uGE5Feb3RA0iOGhtNfgxlq_1Wnf4KZTJ3molYgxYjGIDPc3hyKQ6_Mld9RDptFrPQ73JEhGZpBONrES1x1JV9M2ifrkMXAflqoHdufKvYLAxukL6THeerG5G5OA9UsZM26AzNU3wC8YkbHYh_9dfKtnqEL1gHwm5Bu7uKtC0_zz3saMzVDsV4NMFLY3LWKyMGufkUdMRX_w"
+}.
+2021-09-30 23:56:22,484 DEBUG    requests_oauthlib.oauth2_session Invoking 0 token response hooks.
+2021-09-30 23:56:22,484 DEBUG    requests_oauthlib.oauth2_session Obtained token {'access_token': 'ya29.a0ARrdaM-YWvZquNcNhlZma1NAVpN8TrU6eA0XMQZIwrScP8PFEXFET8n3t79QlhP7-fUacIqayr8pFrvX9dGX0dL8Xzichh6EEBEyxP5T596yCeitq1Ju_i2kYsmMhxuDU20SfftA9cUHp-9gGBQdcZZ-xEMiy2gDzsLz', 'expires_in': 3599, 'refresh_token': '1//0f9chtE7398dcCgYIARAAGA8SNwF-L9IruRmG4j46MJDc6qF8I-MlPfMbAtBHn-A8IiOipgVG7aVv4W0BleajhXst1LHd6z-dU0U', 'scope': ['https://www.googleapis.com/auth/compute', 'https://www.googleapis.com/auth/accounts.reauth', 'openid', 'https://www.googleapis.com/auth/userinfo.email', 'https://www.googleapis.com/auth/cloud-platform', 'https://www.googleapis.com/auth/appengine.admin'], 'token_type': 'Bearer', 'id_token': 'eyJhbGciOiJSUzI1NiIsImtpZCI6IjhkOTI5YzYzZmYxMDgyYmJiOGM5OWY5OTRmYTNmZjRhZGFkYTJkMTEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzMjU1NTk0MDU1OS5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImF1ZCI6IjMyNTU1OTQwNTU5LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTA3MTQ4NDU0NjA0ODAwNzQyMDU0IiwiZW1haWwiOiJsZWV6bm9uQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhdF9oYXNoIjoiU3M4R2RkRGpSVnhHbmptWEtIZlFnZyIsImlhdCI6MTYzMzA2NDE4MiwiZXhwIjoxNjMzMDY3NzgyfQ.JyEjCBeKszbtSeMm0micmHiN5UYGmi0EmZuwrGZDE4Ht147pprVR-PxuuHfNhqyvGfdyXdgdAulkg7HHxhaTDeFtoJ8Ym8LG06wBYvEjP8-L2KgCPXKEC-qbkIdMc2JvkcVMC-uV2y-uGE5Feb3RA0iOGhtNfgxlq_1Wnf4KZTJ3molYgxYjGIDPc3hyKQ6_Mld9RDptFrPQ73JEhGZpBONrES1x1JV9M2ifrkMXAflqoHdufKvYLAxukL6THeerG5G5OA9UsZM26AzNU3wC8YkbHYh_9dfKtnqEL1gHwm5Bu7uKtC0_zz3saMzVDsV4NMFLY3LWKyMGufkUdMRX_w', 'expires_at': 1633067781.4843981}.
+2021-09-30 23:56:22,494 INFO     root            Display format: "none"
+2021-09-30 23:56:22,496 DEBUG    root            Checking for updates...
+2021-09-30 23:56:22,499 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2021-09-30 23:56:22,686 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components-2.json HTTP/1.1" 200 167885
+2021-09-30 23:56:22,761 DEBUG    root            Updating notification cache...
+2021-09-30 23:56:22,764 INFO     ___FILE_ONLY___ You are logged in as: [leeznon@gmail.com].
+
+
+2021-09-30 23:56:22,791 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2021-09-30 23:56:23,016 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/projects?alt=json&filter=lifecycleState%3AACTIVE&pageSize=201 HTTP/1.1" 200 None
+2021-09-30 23:56:56,460 INFO     ___FILE_ONLY___ 
+
+Command killed by keyboard interrupt
+
+
