@@ -1,0 +1,155 @@
+{ $addFields: { THING: { $dateFromString: { dateString: "$timestamp"; } } } }
+])db.bat_test_collection.aggregate([
+    }
+        }
+            }
+THING: { $dateFromString: { dateString: '$timestamp'; } }
+db.bat_test_collection.aggregate([ { $addFields: { {
+db.bat_test_collection.aggregate([ { $addFields: { timestamp_ts: { "test": "TEST" } } }])
+db.createCollection( "bat_test_collection", { timeseries: { timeField: "timestamp" } })
+db.bat_test_collection.aggregate([ { $addFields: { timestamp_ts: { "test": "TEST" } } }])
+db.bat_test_collection.aggregate([ { $addFields: { timestamp_ts: { $toDate: { dateString: '$timestamp' } } } }])
+db.bat_test_collection.aggregate([ { $project: { timestamp: { $toDate: { dateString: '$timestamp' } } } }])
+db.bat_test_collection.aggregate([ { $project: { timestamp: { $dateFromString: { dateString: '$timestamp' } } } }])
+db.createCollection( "bat_test_collection", { timeseries: { timeField: "timestamp" } })
+    --collection=temporarytimeseries --out=timeseries
+    --uri="mongodb://mongodb0.example.com:27017,mongodb1.example.com:27017,mongodb2.example.com:27017/weather" \
+mongodump
+    --collection=temporarytimeseries --out=timeseriesasd
+    --uri="mongodb://mongodb0.example.com:27017,mongodb1.example.com:27017,mongodb2.example.com:27017/weather" \
+    "precipitationEstimatedObservation" : { "discrepancy" : "2", "estimatedWaterDepth" : 999 }mongodump
+    "sections" : [ "AG1" ],
+    },
+      "cavok" : "N"
+      "ceilingHeight" : { "value" : 99999, "quality" : "9", "determination" : "9" },
+    "skyCondition" : {
+    },
+      "variability" : { "value" : "N", "quality" : "9" }
+      "distance" : { "value" : 999999, "quality" : "9" },
+    "visibility" : {
+    },
+      "speed" : { "rate" : 999.9, "quality" : "9" }
+      "type" : "9",
+      "direction" : { "angle" : 999, "quality" : "9" },
+    "wind" : {
+    "pressure" : { "value" : 1015.3, "quality" : "1" },
+    "dewPoint" : { "value" : 999.9, "quality" : "9" },
+    "airTemperature" : { "value" : -3.1, "quality" : "1" },
+    "type" : "FM-13",
+    "dataSource" : "4",
+    "qualityControlProcess" : "V020",
+    "callLetters" : "VCSZ",
+    "elevation" : 9999,
+    },
+      "coordinates" : [ -47.9, 47.6 ]
+      "type" : "Point",
+    "position" : {
+    "ts" : ISODate("1984-03-05T13:00:00Z"),
+}"st" : "x+47600-047900",
+    "precipitationEstimatedObservation" : { "discrepancy" : "2", "estimatedWaterDepth" : 999 }
+    "sections" : [ "AG1" ],
+    },
+      "cavok" : "N"
+      "ceilingHeight" : { "value" : 99999, "quality" : "9", "determination" : "9" },
+    "skyCondition" : {
+    },
+      "variability" : { "value" : "N", "quality" : "9" }
+      "distance" : { "value" : 999999, "quality" : "9" },
+    "visibility" : {
+    },
+      "speed" : { "rate" : 999.9, "quality" : "9" }
+      "type" : "9",
+      "direction" : { "angle" : 999, "quality" : "9" },
+    "wind" : {
+    "pressure" : { "value" : 1015.3, "quality" : "1" },
+    "dewPoint" : { "value" : 999.9, "quality" : "9" },
+    "airTemperature" : { "value" : -3.1, "quality" : "1" },
+    "type" : "FM-13",
+    "dataSource" : "4",
+    "qualityControlProcess" : "V020",
+    "callLetters" : "VCSZ",
+    "elevation" : 9999,
+    },
+      "coordinates" : [ -47.9, 47.6 ]
+      "type" : "Point",
+    "position" : {
+    "ts" : ISODate("1984-03-05T13:00:00Z"),
+    "st" : "x+47600-047900",
+    "_id" : ObjectId("5553a998e4b02cf7151190b8"),
+}db.weathernew.insert_one([{
+    "precipitationEstimatedObservation" : { "discrepancy" : "2", "estimatedWaterDepth" : 999 }
+    "sections" : [ "AG1" ],
+    },
+      "cavok" : "N"
+      "ceilingHeight" : { "value" : 99999, "quality" : "9", "determination" : "9" },
+    "skyCondition" : {
+    },
+      "variability" : { "value" : "N", "quality" : "9" }
+      "distance" : { "value" : 999999, "quality" : "9" },
+    "visibility" : {
+    },
+      "speed" : { "rate" : 999.9, "quality" : "9" }
+      "type" : "9",
+      "direction" : { "angle" : 999, "quality" : "9" },
+    "wind" : {
+    "pressure" : { "value" : 1015.3, "quality" : "1" },
+    "dewPoint" : { "value" : 999.9, "quality" : "9" },
+    "airTemperature" : { "value" : -3.1, "quality" : "1" },
+    "type" : "FM-13",
+    "dataSource" : "4",
+    "qualityControlProcess" : "V020",
+    "callLetters" : "VCSZ",
+    "elevation" : 9999,
+    },
+      "coordinates" : [ -47.9, 47.6 ]
+      "type" : "Point",
+    "position" : {
+    "ts" : ISODate("1984-03-05T13:00:00Z"),
+    "st" : "x+47600-047900",
+    "_id" : ObjectId("5553a998e4b02cf7151190b8"),
+db.weathernew.insert_one({)
+db.temporarytimeseries.findOne()
+{ "_id" : ObjectId("5553a998e4b02cf7151190b8"), "ts" : ISODate("1984-03-05T13:00:00Z"), "dataSource" : "4", "airTemperature" : { "value" : -3.1, "quality" : "1" }, "dewPoint" : { "value" : 999.9, "quality" : "9" }, "pressure" : { "value" : 1015.3, "quality" : "1" }, "wind" : { "direction" : { "angle" : 999, "quality" : "9" }, "type" : "9", "speed" : { "rate" : 999.9, "quality" : "9" } }, "visibility" : { "distance" : { "value" : 999999, "quality" : "9" }, "variability" : { "value" : "N", "quality" : "9" } }, "skyCondition" : { "ceilingHeight" : { "value" : 99999, "quality" : "9", "determination" : "9" }, "cavok" : "N" }, "sections" : [ "AG1" ], "precipitationEstimatedObservation" : { "discrepancy" : "2", "estimatedWaterDepth" : 999 }, "metaData" : { "st" : "x+47600-047900", "position" : { "type" : "Point", "coordinates" : [ -47.9, 47.6 ] }, "elevation" : 9999, "callLetters" : "VCSZ", "qualityControlProcess" : "V020", "type" : "FM-13" } } db.temporarytimeseries.findOne()
+db.temporarytimeseries.findOne()
+db.weather_data.aggregate([ { $addFields: { metaData: { "st": "$st", "position": "$position", "elevation": "$elevation", "callLetters": "$callLetters", "qualityControlProcess": "$qualityControlProcess", "type": "$type" } } }, { $project: { _id: 1, ts: 1, metaData: 1, dataSource: 1, airTemperature: 1, dewPoint: 1, pressure: 1, wind: 1, visibility: 1, skyCondition: 1, sections: 1, precipitationEstimatedObservation: 1 } }, { $out: "temporarytimeseries" }])
+db.test_thing
+db.weather_data
+db.runCommand( { listCollections: 1.0 } )
+mongodump --uri="mongodb+srv://dbUserAnthony:oAbAcJHGCh3qlf7x@cluster0.9ptvo.mongodb.net/Bat_DB?retryWrites=true&w=majority" --collection=temporarytimeseries --out=timeseries
+mongodump --uri="mongodb+srv://dbUserAnthony:oAbAcJHGCh3qlf7x@cluster0.9ptvo.mongodb.net/Bat_DB?retryWrites=true&w=majority/weather" --collection=temporarytimeseries --out=timeseries
+    --collection=temporarytimeseries --out=timeserie
+    --uri="mongodb+srv://dbUserAnthony:oAbAcJHGCh3qlf7x@cluster0.9ptvo.mongodb.net/Bat_DB?retryWrites=true&w=majority/weather" \
+mongodump
+typeof db.getCollection("Bat_Collection")
+db.getCollection("Bat_Collection")
+db.getCollection().find()
+db.getCollection()
+typeof db.collection_name
+typeof db
+db.createCollection( "weathernew", { timeseries: { timeField: "ts", metaField: "metaData", granularity: "hours" } })
+exit
+db.createCollection( "weathernew", { timeseries: { timeField: "ts", metaField: "metaData", granularity: "hours" } })
+db.createCollection( "weathernew", { timeseries: { timeField: "ts", metaField: "metaData", granularity: "hours" } })
+)
+     }
+       }
+         granularity: "hours"
+         metaField: "metaData",
+         timeField: "ts",
+      timeseries: {
+    "weathernew", {
+db.createCollection(
+clear
+db.getDb()
+db.getDB()
+db.get()
+mongotop
+db.version()
+db.version
+db.createCollection( "weathernew", { timeseries: { timeField: "ts", metaField: "metaData", granularity: "hours" } })
+db.getMongo()eCollection(
+db.getMongo()rs" } })
+db.getMongo()eCollection(
+db.getMongo() } })
+db.getMongo()eCollection(
+db.getMongo()
