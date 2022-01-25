@@ -88,8 +88,6 @@ source /Users/anthonyjdella/.oh-my-zsh/themes/powerlevel10k/powerlevel10k.zsh-th
 
 export NPM_CONFIG_PREFIX=/usr/local/lib/node_modules
 export PATH="$NPM_CONFIG_PREFIX"/bin:"$PATH"
-
-
 export PATH=$PATH:$HOME/bin
 export PATH="$HOME/.basher/bin:$PATH"
 export PATH=/Library/Frameworks/Python.framework/Versions/3.10/bin/python:${PATH}
