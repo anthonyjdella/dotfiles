@@ -75,6 +75,9 @@ dot config --local status.showUntrackedFiles no
 
 // Pull
 dot pull
+
+// Checkout
+dot checkout
 ```
 
 ## References
