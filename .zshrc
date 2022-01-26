@@ -101,6 +101,7 @@ alias finder="ofd"
 alias vs="code ."
 alias pip="pip3"
 alias dot="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
+# Use exa to list files with beautiful colors. -l option is for a list, -a for hidden files, -h for headers
 alias la="exa --icons -lah"
 alias ls="exa"
 
@@ -113,4 +114,5 @@ if [ -f '/Users/anthonyjdella/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/a
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/anthonyjdella/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/anthonyjdella/google-cloud-sdk/completion.zsh.inc'; fi
 
+# When you type code (followed by a file path), it will open the file in VSCode.
 code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
