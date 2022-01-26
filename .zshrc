@@ -96,11 +96,13 @@ export PATH=/Library/Frameworks/Python.framework/Versions/3.10/bin/python:${PATH
 alias gs="git status"
 alias gp="git pull"
 alias ga="git add ."
-alias zsh="open ~/.zshrc"
+alias zsh="VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args ~/.zshrc ;"
 alias finder="ofd"
 alias vs="code ."
 alias pip="pip3"
 alias dot="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
+alias la="exa --icons -lah"
+alias ls="exa"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -110,3 +112,5 @@ if [ -f '/Users/anthonyjdella/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/a
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/anthonyjdella/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/anthonyjdella/google-cloud-sdk/completion.zsh.inc'; fi
+
+code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
