@@ -1,0 +1,4 @@
+# Variables which are sourced in .zshrc
+
+export ZSH=~/.oh-my-zsh
+export NPM_CONFIG_PREFIX=/usr/local/lib/node_modules

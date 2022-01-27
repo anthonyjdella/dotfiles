@@ -1,0 +1,44 @@
+# Aliases which are sourced in .zshrc
+
+# For Git
+alias gs="git status"
+alias gp="git pull"
+alias ga="git add ."
+
+# For NPM
+alias ni='npm install'
+alias ns='npm run start'
+alias nb='npm run build'
+alias nt='npm test'
+alias nu='ncu'
+
+# For Yarn
+alias yi='yarn install'
+
+#For opening zshrc in VSCode
+alias zsh="VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args ~/.zshrc ;"
+
+# When you type code (followed by a file path), it will open the file in VSCode.
+code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
+
+# For opening finder in the current directory
+alias finder="ofd"
+
+# For file/directory size
+alias ds='du -d 1 -h | sort -h'
+
+# For getting IP Address
+alias ip='curl -4 ifconfig.co' # && curl -6 ifconfig.co
+
+# For opening VSCode in the current directory
+alias vs="code ."
+
+# For renaming pip to pip3
+alias pip="pip3"
+
+# For git commands on dotfiles
+alias dot="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
+
+# Use exa to list files with beautiful colors. -l option is for a list, -a for hidden files, -h for headers
+alias la="exa --icons -lah"
+alias ls="exa"

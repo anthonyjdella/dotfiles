@@ -1,12 +1,12 @@
+# This enables Instant Prompt, which I like to turn off...
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+    source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
 # Oh My Zsh Settings
-# ZSH_THEME="powerlevel10k/powerlevel0k"
 COMPLETION_WAITING_DOTS="true"
 
 # Oh My Zsh Plugins
@@ -61,58 +61,20 @@ plugins=(
     zsh-autosuggestions
 )
 
-# Powerlevel9k Settings
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
-    os_icon
-    context
-    dir
-    vcs
-    newline
-    status
-)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(
-    time
-)
-# POWERLEVEL9K_CONTEXT_TEMPLATE="%n@`hostname -f`"
-POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
-POWERLEVEL9K_VCS_MODIFIED_BACKGROUND='red'
-POWERLEVEL9K_TIME_FORMAT="%D{%I:%M %m/%d/%Y}"
-POWERLEVEL9K_APPLE_ICON=
-
-# Exports and Paths
-export ZSH=~/.oh-my-zsh
-
-source $ZSH/oh-my-zsh.sh
-source /Users/anthonyjdella/.oh-my-zsh/themes/powerlevel10k/powerlevel10k.zsh-theme
-# source ~/powerlevel10k/powerlevel10k.zsh-theme
-
-export NPM_CONFIG_PREFIX=/usr/local/lib/node_modules
-export PATH="$NPM_CONFIG_PREFIX"/bin:"$PATH"
-export PATH=$PATH:$HOME/bin
-export PATH="$HOME/.basher/bin:$PATH"
-export PATH=/Library/Frameworks/Python.framework/Versions/3.10/bin/python:${PATH}
-
-# Alias Settings
-alias gs="git status"
-alias gp="git pull"
-alias ga="git add ."
-alias zsh="VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args ~/.zshrc ;"
-alias finder="ofd"
-alias vs="code ."
-alias pip="pip3"
-alias dot="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
-# Use exa to list files with beautiful colors. -l option is for a list, -a for hidden files, -h for headers
-alias la="exa --icons -lah"
-alias ls="exa"
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/anthonyjdella/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/anthonyjdella/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/anthonyjdella/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/anthonyjdella/google-cloud-sdk/completion.zsh.inc'; fi
 
-# When you type code (followed by a file path), it will open the file in VSCode.
-code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
+# Source additional config
+source ~/.zsh/var
+source ~/.zsh/aliases
+source ~/.zsh/path
+
+source $ZSH/oh-my-zsh.sh
+source $ZSH/themes/powerlevel10k/powerlevel10k.zsh-theme
+
+# Customizing Powerlevel10k...
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

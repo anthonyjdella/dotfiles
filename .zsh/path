@@ -1,0 +1,6 @@
+# Paths which are sourced in .zshrc
+
+export PATH="$NPM_CONFIG_PREFIX"/bin:"$PATH"
+export PATH=$PATH:$HOME/bin
+export PATH=/Library/Frameworks/Python.framework/Versions/3.10/bin/python:${PATH}
+export PATH=/usr/local/bin:${PATH}
