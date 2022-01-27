@@ -1,0 +1,47 @@
+{
+    "editor.wordWrap": "on",
+    "terminal.external.osxExec": "iTerm2.app",
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.renderWhitespace": "boundary",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "python.pythonPath": "/usr/bin/python3",
+    "files.autoSave": "afterDelay",
+    "workbench.editor.highlightModifiedTabs": true,
+    "workbench.editor.limit.value": 100,
+    "workbench.editor.wrapTabs": true,
+    "python.defaultInterpreterPath": "/usr/bin/python3",
+    "[handlebars]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "terminal.integrated.scrollback": 100000,
+    "explorer.confirmDelete": false,
+    "json.maxItemsComputed": 50000,
+    "bracket-pair-colorizer-2.depreciation-notice": false,
+    "editor.inlineSuggest.enabled": true,
+    "github.copilot.enable": {
+        "*": true,
+        "yaml": false,
+        "plaintext": true,
+        "markdown": false
+    },
+    "editor.formatOnPaste": true,
+    "workbench.colorTheme": "SynthWave '84",
+    "editor.fontFamily": "JetBrains Mono, Fira Code, Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "editor.lineHeight": 20,
+    "editor.smoothScrolling": true,
+    "editor.cursorSmoothCaretAnimation": true,
+    "editor.cursorBlinking": "smooth",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "window.title": "${dirty} ${activeEditorShort}${separator}${rootPath}",
+    "workbench.editor.enablePreview": false,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "j"],
+            "after": ["<Esc>"]
+        }
+    ]
+}
