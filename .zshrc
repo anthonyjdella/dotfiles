@@ -68,9 +68,9 @@ if [ -f '/Users/anthonyjdella/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/a
 if [ -f '/Users/anthonyjdella/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/anthonyjdella/google-cloud-sdk/completion.zsh.inc'; fi
 
 # Source additional config
-source ~/.zsh/var
 source ~/.zsh/aliases
 source ~/.zsh/path
+source ~/.zsh/var
 
 source $ZSH/oh-my-zsh.sh
 source $ZSH/themes/powerlevel10k/powerlevel10k.zsh-theme

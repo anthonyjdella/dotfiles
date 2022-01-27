@@ -30,6 +30,10 @@ alias ds='du -d 1 -h | sort -h'
 # For getting IP Address
 alias ip='curl -4 ifconfig.co' # && curl -6 ifconfig.co
 
+# Use exa to list files with beautiful colors. -l option is for a list, -a for hidden files, -h for headers
+alias la='exa --icons -lah'
+alias ls='exa'
+
 # For opening VSCode in the current directory
 alias vs="code ."
 
@@ -38,7 +42,3 @@ alias pip="pip3"
 
 # For git commands on dotfiles
 alias dot="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
-
-# Use exa to list files with beautiful colors. -l option is for a list, -a for hidden files, -h for headers
-alias la="exa --icons -lah"
-alias ls="exa"
